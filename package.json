@@ -4,7 +4,8 @@
   "description": "Scripts for witchcraft chrome extension",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/wffranco/witchcraft-scripts#readme",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "http": "^0.0.1-security"
   }
 }
