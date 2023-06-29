@@ -1,0 +1,28 @@
+{
+  "name": "witchcraft-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for witchcraft chrome extension",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wffranco/witchcraft-scripts.git"
+  },
+  "keywords": [
+    "witchcraft",
+    "scripts",
+    "node",
+    "nodejs"
+  ],
+  "author": "Willem Franco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wffranco/witchcraft-scripts/issues"
+  },
+  "homepage": "https://github.com/wffranco/witchcraft-scripts#readme",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
