@@ -7,16 +7,16 @@ const server = http.createServer((req, res) => {
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
-      res.writeHead(404, { 'Content-Type': 'text/plain' });
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       res.end('File not found');
     } else {
       const extension = path.extname(filePath);
       if (extension === '.js') {
-        res.writeHead(200, { 'Content-Type': 'text/javascript' });
+        res.writeHead(200, { 'Content-Type': 'text/javascript; charset=utf-8' });
       } else if (extension === '.css') {
-        res.writeHead(200, { 'Content-Type': 'text/css' });
+        res.writeHead(200, { 'Content-Type': 'text/css; charset=utf-8' });
       } else {
-        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
       }
       res.end(data);
     }
